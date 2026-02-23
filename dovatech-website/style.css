@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 20px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-page{
+    background-image: url(dovatech.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.navbar{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+.navbar nav a{
+    color: rgb(247, 117, 11);
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    gap: 15px;
+}
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+h1{
+    color: rgb(6, 6, 6);
+    text-shadow: 2px 2px 5px rgb(243, 243, 246);
+}
+.hero h2{
+   color: white;
+   background-color: transparent;
+   font-size: 2.5em;
+   text-shadow: 2px 2px 5px rgb(168, 164, 164);
+}
+.hero p{
+    color: white;
+    background-color: transparent;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgb(168, 164, 164);
+}
+.hero .btn {
+    display: inline-block;
+    margin:0 10px;
+    padding: 12px 25px;
+    background-color: rgb(247, 117, 11);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:link{
+    color: rgb(247, 117, 11);
+}
+.navbar nav a:active{
+    color: rgb(172, 230, 171);
+    font-size: 1.2em;
+}
+.navbar nav a:hover{
+    color: rgb(24, 11, 11);
+    font-size: 1.1em;
+}
+.navbar nav a:visited{
+    color: rgb(41, 41, 42);
+}
+
+p:hover{
+    font-weight: bold;
+}
+li:hover{
+    background-color: hwb(192 42% 31%);
+    font-size: x-large;
+}
+li:not(:hover){
+    background-color: hwb(192 11% 64%);
+}
+.service li{
+    background-color: rgb(174, 179, 176);
+    padding: 20px;
+    display: none;
+}
+.service:hover li{
+    background-color: rgb(174, 179, 176);
+    display: block;
+    min-width: 50px;
+    max-height: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+.service{
+    display: inline-block;
+    font-size: large;
+    text-decoration: underline;
+}
+.ABOUT{
+    padding: 50px 80px;
+    background-color: hwb(72 64% 35%);
+    font-size: 1em;
+    position: relative;
+    font-family: sans-serif;
+    border-left: 5px solid hwb(0 8% 92%);
+}
+.ABOUT-HERO {
+    padding: 50px 80px;
+    background-color: hwb(72 64% 35%);
+    text-align: center;
+}
+.ABOUT-HERO h2{
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+.ABOUT p {
+    max-width: 800px;
+    font-size: 1.1em;
+    margin: 0 auto;
+}
+.MISSION-VISION {
+    display: flex;
+    gap: 40px;
+    padding: 50px 80px;
+}
+.MISSION-VISION div {
+    flex: 1;
+    background-color: rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 8px;
+     border-left: 5px solid hwb(72 64% 35%);
+}
+.MISSION-VISION h3{
+     text-decoration: underline;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+.WHY-US{
+    display: flex;
+    gap: 40px;
+    padding: 50px 80px;
+    background-color: rgb(104, 68, 1);
+    color: white;
+}
+.WHY-US div {
+    flex: 1;
+    background-color: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid white;
+}
+.WHY-US p {
+    color: white;
+    background-color: transparent;
+}
+.WHY-US h3{
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.about-page{
+    background-color: white;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(104, 68, 1);
+    color: white;
+    margin-top: 50px;
+}
+.services-hero {
+    padding: 50px 80px;
+    background-color: rgb(104, 68, 1);
+    color: white;
+    text-align: center;
+}
+
+.services-hero h2 {
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+.services-hero p {
+    font-size: 1.1em;
+    background-color: transparent;
+    color: white;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 80px;
+}
+
+.services-list div {
+    flex: 1 1 calc(50% - 30px);
+    background-color: rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid rgb(104, 68, 1);
+}
+
+.services-list h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.contact-main {
+    display: flex;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 50px;
+    background-color: white;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    display: block;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background-color: rgb(104, 68, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.contact-info {
+    flex: 1;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.contact-info p {
+    margin-right: 10px;
+    color: rgb(104, 68, 1);
+}
+
+.contact-hero {
+    color: white;
+    padding: 40px 50px;
+    background-color:  rgb(104, 68, 1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.contact-hero h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-decoration: underline;
+}
